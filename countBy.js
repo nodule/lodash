@@ -27,7 +27,8 @@ module.exports = {
       iteratee: {
         title: "Iteratee",
         description: "Function or property string",
-        type: "any"
+        type: "any",
+        required: false
       }
     },
     output: {
