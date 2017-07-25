@@ -1,0 +1,35 @@
+{
+  "name": "sortBy",
+  "ns": "lodash",
+  "description": "sortBy",
+  "async": true,
+  "phrases": {
+    "active": "performing sortBy"
+  },
+  "ports": {
+    "input": {
+      "in": {
+        "title": "Collection",
+        "type": "array",
+        "async": true
+      },
+      "iteratees": {
+        "title": "Iteratees",
+        "description": "Functions and/or property strings",
+        "type": "array",
+        "required": false
+      }
+    },
+    "output": {
+      "out": {
+        "title": "out",
+        "type": "object"
+      }
+    }
+  },
+  "dependencies": {
+    "npm": {
+      "lodash": "latest"
+    }
+  }
+}

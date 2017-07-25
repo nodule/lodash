@@ -45,6 +45,42 @@
         }
       },
       "fn": "on.input.in = function() {\n  output({ out: $.write('in', lodash.countBy($.in, $.iteratee)) });\n};\n"
+    },
+    {
+      "name": "sortBy",
+      "ns": "lodash",
+      "description": "sortBy",
+      "async": true,
+      "phrases": {
+        "active": "performing sortBy"
+      },
+      "ports": {
+        "input": {
+          "in": {
+            "title": "Collection",
+            "type": "array",
+            "async": true
+          },
+          "iteratees": {
+            "title": "Iteratees",
+            "description": "Functions and/or property strings",
+            "type": "array",
+            "required": false
+          }
+        },
+        "output": {
+          "out": {
+            "title": "out",
+            "type": "object"
+          }
+        }
+      },
+      "dependencies": {
+        "npm": {
+          "lodash": "latest"
+        }
+      },
+      "fn": "on.input.in = function() {\n  output({ out: $.write('in', lodash.sortBy($.in, $.iteratee)) });\n};\n"
     }
   ]
 }

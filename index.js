@@ -1,3 +1,4 @@
 module.exports = {
-  countBy: require('./countBy')
+  countBy: require('./countBy'),
+  sortBy: require('./sortBy')
 }
