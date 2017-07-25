@@ -1,0 +1,28 @@
+{
+  "name": "nodule-lodash",
+  "description": "Lodash for Chiχ nodules",
+  "author": "Rob Halff <rob.halff@gmail.com>",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nodule/lodash.git"
+  },
+  "engines": {
+    "node": ">=0.6.0"
+  },
+  "main": "x",
+  "scripts": {
+    "test": "chit -r"
+  },
+  "devDependencies": {
+    "chit": "0.x.x"
+  },
+  "chix": {
+    "name": "lodash",
+    "color": "rgb(25,116,136)"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}

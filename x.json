@@ -1,0 +1,44 @@
+{
+  "name": "lodash",
+  "description": "Lodash for Chiχ nodules",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nodule/lodash.git"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
+  "nodes": [
+    {
+      "name": "countBy",
+      "ns": "lodash",
+      "description": "countBy",
+      "async": true,
+      "phrases": {
+        "active": "performing countBy"
+      },
+      "ports": {
+        "input": {
+          "in": {
+            "title": "Collection",
+            "type": "array",
+            "async": true
+          },
+          "iteratee": {
+            "title": "Iteratee",
+            "description": "Function or property string",
+            "type": "any"
+          }
+        },
+        "output": {
+          "out": {
+            "title": "out",
+            "type": "object"
+          }
+        }
+      },
+      "fn": "on.input.in = function() {\n  output({ out: $.write('in', lodash.countBy($.in, $.iteratee)) });\n};\n"
+    }
+  ]
+}

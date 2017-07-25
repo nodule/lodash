@@ -1,0 +1,29 @@
+{
+  "name": "countBy",
+  "ns": "lodash",
+  "description": "countBy",
+  "async": true,
+  "phrases": {
+    "active": "performing countBy"
+  },
+  "ports": {
+    "input": {
+      "in": {
+        "title": "Collection",
+        "type": "array",
+        "async": true
+      },
+      "iteratee": {
+        "title": "Iteratee",
+        "description": "Function or property string",
+        "type": "any"
+      }
+    },
+    "output": {
+      "out": {
+        "title": "out",
+        "type": "object"
+      }
+    }
+  }
+}
