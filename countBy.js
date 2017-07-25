@@ -12,7 +12,7 @@ module.exports = {
         title: "Collection",
         type: "array",
         async: true,
-        fn: function __IN__(data, source, state, input, $, output) {
+        fn: function __IN__(data, source, state, input, $, output, lodash) {
           var r = function() {
             output({
               out: $.write('in', lodash.countBy($.in, $.iteratee))
@@ -36,6 +36,11 @@ module.exports = {
         title: "out",
         type: "object"
       }
+    }
+  },
+  dependencies: {
+    npm: {
+      lodash: require('lodash')
     }
   },
   state: {}

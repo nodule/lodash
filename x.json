@@ -39,6 +39,11 @@
           }
         }
       },
+      "dependencies": {
+        "npm": {
+          "lodash": "latest"
+        }
+      },
       "fn": "on.input.in = function() {\n  output({ out: $.write('in', lodash.countBy($.in, $.iteratee)) });\n};\n"
     }
   ]
